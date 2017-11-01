@@ -1,14 +1,15 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
+	<ion-navbar>
+		<ion-title>
+			Ionic Blank
+		</ion-title>
+	</ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+	{{counter | async}}
+<br>
+	<button ion-button (click)="increment()">+</button>
+	<button ion-button (click)="decrement()">-</button>
+	<button ion-button (click)="reset()">reset</button>
 </ion-content>
